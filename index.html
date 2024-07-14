@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VR Voyager - Virtual Reality Travel Experience</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-globe"></i> VR Voyager
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#destinations">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#virtual-tours">Virtual Tours</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#packages">Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reviews">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#profileModal">Profile</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <!-- Hero Section with Video Slider -->
+<header id="home" class="hero">
+    <div class="video-slider">
+        <div class="video-slide active">
+            <video autoplay muted loop>
+                <source src="video1.mp4" type="video/mp4">
+            </video>
+            <div class="content">
+                <h2>Explore Paris</h2>
+                <p>Experience the City of Light in stunning VR</p>
+            </div>
+        </div>
+        <div class="video-slide">
+            <video autoplay muted loop>
+                <source src="video2.mp4" type="video/mp4">
+            </video>
+            <div class="content">
+                <h2>Discover Tokyo</h2>
+                <p>Immerse yourself in Japan's vibrant capital</p>
+            </div>
+        </div>
+        <div class="video-slide">
+            <video autoplay muted loop>
+                <source src="video3.mp4" type="video/mp4">
+            </video>
+            <div class="content">
+                <h2>Adventure in New York</h2>
+                <p>Explore the Big Apple like never before</p>
+            </div>
+        </div>
+    </div>
+    <div class="slider-navigation">
+        <button class="nav-btn active"></button>
+        <button class="nav-btn"></button>
+        <button class="nav-btn"></button>
+    </div>
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-lg-6">
+                <h1 class="display-4 text-white">Experience the World in VR</h1>
+                <p class="lead text-white">Explore exotic destinations from the comfort of your home.</p>
+                <a href="#virtual-tours" class="btn btn-primary btn-lg">Start Your Journey</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <!-- Destinations Section -->
+    <section id="destinations" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Popular Destinations</h2>
+            <div class="row" id="destinationCards">
+                <!-- Destination cards will be dynamically inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Virtual Tours Section -->
+    <section id="virtual-tours" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Virtual Tours</h2>
+            <div class="row" id="tourCards">
+                <!-- Tour cards will be dynamically inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Travel Packages Section -->
+    <section id="packages" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Travel Packages</h2>
+            <div class="row" id="packageCards">
+                <!-- Package cards will be dynamically inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- User Reviews Section -->
+    <section id="reviews" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">User Reviews</h2>
+            <div class="row" id="reviewCards">
+                <!-- Review cards will be dynamically inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5><i class="bi bi-globe"></i> VR Voyager</h5>
+                    <p>Explore the world from your home.</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class="text-light">Home</a></li>
+                        <li><a href="#destinations" class="text-light">Destinations</a></li>
+                        <li><a href="#virtual-tours" class="text-light">Virtual Tours</a></li>
+                        <li><a href="#packages" class="text-light">Packages</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center mb-0">&copy; 2024 VR Voyager. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Profile Modal -->
+    <div class="modal fade" id="profileModal" tabindex="-1" aria-labelledby="profileModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="profileModalLabel">User Profile</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="profileForm">
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Username</label>
+                            <input type="text" class="form-control" id="username" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Save Changes</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
